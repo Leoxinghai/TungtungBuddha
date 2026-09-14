@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — TungTung: Save the Buddha</title>
+<meta name="description" content="Privacy Policy for the mobile game TungTung: Save the Buddha.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --stone:#e9ece4;      /* pale sage-stone page */
+    --panel:#f6f7f2;      /* card surface */
+    --ink:#20261f;        /* olive-ink text */
+    --muted:#5c6659;      /* secondary text */
+    --moss:#5f7f45;       /* moss green */
+    --deep:#14241b;       /* temple dark */
+    --deep-2:#1c3226;     /* temple dark 2 */
+    --gold:#b28a34;       /* muted temple gold */
+    --gold-soft:#d8b45e;
+    --line:#d3d7cb;       /* hairlines */
+    --maxw:44rem;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--stone);color:var(--ink);
+    font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    font-size:17px;line-height:1.65;
+  }
+  a{color:#7a5c14;text-underline-offset:2px}
+  a:focus-visible,summary:focus-visible{outline:3px solid var(--gold-soft);outline-offset:3px;border-radius:3px}
+
+  /* ── Header: temple-stone band (the one bold element) ── */
+  header.hero{
+    background:
+      radial-gradient(120% 90% at 15% -10%, #24402f 0%, transparent 55%),
+      linear-gradient(160deg,var(--deep-2),var(--deep));
+    color:#eaf0e6;position:relative;overflow:hidden;
+    border-bottom:3px solid var(--gold);
+  }
+  header.hero::after{ /* faint carved-stone striations */
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.09;
+    background:repeating-linear-gradient(115deg,#000 0 2px,transparent 2px 10px);
+    mix-blend-mode:overlay;
+  }
+  .hero .wrap{max-width:var(--maxw);margin:0 auto;padding:44px 22px 40px;position:relative;z-index:1}
+  .crest{display:flex;align-items:center;gap:12px;color:var(--gold-soft);
+    font-family:"Inter";font-weight:600;font-size:.82rem;letter-spacing:.14em;margin:0 0 14px}
+  .crest svg{flex:0 0 auto}
+  .game{font-family:"Inter";font-weight:600;letter-spacing:.02em;color:#cfe0c4;margin:0 0 4px;font-size:1rem}
+  h1{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(2.1rem,6vw,3rem);
+    line-height:1.05;margin:.1em 0 .35em;color:#fbfaf3}
+  .meta{color:#a9bda1;font-size:.95rem;margin:0}
+  .meta b{color:#e7efe1;font-weight:600}
+
+  /* ── Body ── */
+  main{max-width:var(--maxw);margin:0 auto;padding:8px 22px 72px}
+
+  .summary{
+    background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--moss);
+    border-radius:10px;padding:18px 20px;margin:34px 0 8px;
+  }
+  .summary h2{margin-top:0}
+  .summary ul{margin:.4rem 0 0;padding-left:1.15rem}
+  .summary li{margin:.28rem 0}
+
+  section{padding-top:30px}
+  h2{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:1.5rem;line-height:1.2;
+    margin:0 0 .5rem;color:#243021}
+  h2 .n{color:var(--gold);font-size:.9rem;font-family:"Inter";font-weight:600;
+    vertical-align:.5em;margin-right:.5rem}
+  h3{font-family:"Inter";font-weight:600;font-size:1.02rem;margin:1.2rem 0 .3rem;color:#2f3a2a}
+  p{margin:.55rem 0}
+  ul{padding-left:1.2rem}
+  li{margin:.3rem 0}
+  strong{font-weight:600}
+
+  hr{border:none;border-top:1px solid var(--line);margin:34px 0 0}
+
+  /* data table */
+  .tablewrap{overflow-x:auto;margin:.8rem 0}
+  table{border-collapse:collapse;width:100%;min-width:34rem;font-size:.95rem;background:var(--panel);
+    border:1px solid var(--line);border-radius:10px;overflow:hidden}
+  caption{caption-side:bottom;color:var(--muted);font-size:.85rem;text-align:left;padding:.5rem 2px}
+  th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  thead th{background:#eef1e8;color:#2c3826;font-weight:600}
+  tbody tr:last-child td{border-bottom:none}
+
+  .contact{background:var(--deep);color:#e9f0e4;border-radius:12px;padding:22px 22px;margin-top:14px}
+  .contact h2{color:#fbfaf3}
+  .contact a{color:var(--gold-soft)}
+
+  .fill{background:#fff6df;border:1px dashed var(--gold);color:#6a531a;
+    padding:2px 6px;border-radius:5px;font-weight:600;white-space:nowrap}
+
+  footer{max-width:var(--maxw);margin:0 auto;padding:0 22px 60px;color:var(--muted);font-size:.85rem}
+  footer p{margin:.3rem 0}
+
+  @media (max-width:520px){ body{font-size:16px} .hero .wrap{padding:34px 18px 30px} main{padding:4px 18px 56px} }
+  @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+  @media print{
+    body{background:#fff;color:#000;font-size:12pt}
+    header.hero{background:#fff;color:#000;border-bottom:2px solid #000}
+    header.hero::after{display:none}.crest,.game,.meta{color:#000}h1,.contact h2{color:#000}
+    .contact{background:#fff;color:#000;border:1px solid #000}.fill{border:1px solid #000;background:#fff}
+    a{color:#000}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="crest">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.9 7.2 17.7l.9-5.4L4.2 8.5l5.4-.8L12 2z" stroke="#d8b45e" stroke-width="1.4" stroke-linejoin="round"/>
+      </svg>
+      PRIVACY POLICY
+    </p>
+    <p class="game">TungTung: Save the Buddha</p>
+    <h1>How this game handles your data</h1>
+    <p class="meta">Last updated <b>30-Sep-2026</b> &nbsp;·&nbsp; Published by <b>DungdungBot</b></p>
+  </div>
+</header>
+
+<main>
+
+  <div class="summary">
+    <h2 style="font-size:1.15rem">The short version</h2>
+    <ul>
+      <li>The game works without an account and does <strong>not</strong> ask for your name, email, or location.</li>
+      <li>Your progress, coins, and settings are saved <strong>on your device</strong>, not on our servers.</li>
+      <li>Purchases (coin packs) are processed by <strong>Google Play</strong>. We never see your card details.</li>
+      <li>We don't sell your personal information.</li>
+    </ul>
+    <p style="margin:.6rem 0 0;color:var(--muted);font-size:.92rem">The full detail is below.</p>
+  </div>
+
+  <section id="intro">
+    <h2><span class="n">1</span>Who we are</h2>
+    <p>This Privacy Policy explains how <strong>Dungdungbot</strong> ("we", "us", "our") handles
+      information in connection with the mobile game <strong>TungTung: Save the Buddha</strong> (the "Game"),
+      available on Google Play. By downloading or playing the Game, you agree to this policy.</p>
+  </section>
+
+  <section id="collect">
+    <h2><span class="n">2</span>Information we collect</h2>
+
+    <h3>Information you give us</h3>
+    <p>The Game has no sign‑up or login, so we do not ask for personal details such as your name, email
+      address, phone number, or location. The only information tied to you is what you choose to send us
+      if you contact support by email.</p>
+
+    <h3>Game data stored on your device</h3>
+    <p>The Game saves your play data <strong>locally on your device</strong> (for example: level progress and
+      unlocks, coins and energy, hero health, and audio/settings preferences). This data stays on your device,
+      is not transmitted to us, and is removed when you uninstall the Game or clear its data.</p>
+
+    <h3>Purchase information</h3>
+    <p>If you buy an in‑app item (such as a coin pack), the purchase is handled by <strong>Google Play
+      Billing</strong>. Google processes your payment; we do <strong>not</strong> receive or store your credit‑card
+      or payment‑method details. We receive a purchase confirmation (such as a purchase token/order ID) so we can
+      deliver the item you bought.</p>
+
+    <h3>Technical information</h3>
+    <p>To download the Game and process purchases, Google Play and Google Play services may collect standard
+      technical information (such as device type, operating‑system version, and a Google‑assigned identifier) as
+      described in Google's own privacy policy. This is handled by Google, not by us.</p>
+
+    <!-- OPTIONAL — DELETE THIS BLOCK IF YOU DO NOT USE ANALYTICS -->
+    <h3>Analytics <span class="fill">optional — remove if unused</span></h3>
+    <p>We may use an analytics service to understand how the Game is used (for example, which levels are played
+      and whether the Game crashes) so we can improve it. This produces aggregated and de‑identified usage and
+      diagnostic data. If you enable this section, name your provider here (e.g., Google Analytics for Firebase)
+      and link its policy.</p>
+
+    <!-- OPTIONAL — DELETE THIS BLOCK IF YOUR GAME HAS NO ADS -->
+    <h3>Advertising <span class="fill">optional — remove if unused</span></h3>
+    <p>If the Game shows ads, an advertising partner may use a device advertising identifier to serve and measure
+      ads. If you enable this section, name your ad provider here (e.g., Google AdMob) and link its policy, and
+      make sure your Data safety form and age‑target settings match.</p>
+  </section>
+
+  <section id="use">
+    <h2><span class="n">3</span>How we use information</h2>
+    <ul>
+      <li>To run the Game and save your progress on your device.</li>
+      <li>To deliver in‑app items you purchase and validate those purchases.</li>
+      <li>To respond to you when you contact support.</li>
+      <li>To keep the Game working, fix bugs, and improve gameplay.</li>
+      <li>To comply with legal obligations and prevent fraud or abuse.</li>
+    </ul>
+  </section>
+
+  <section id="sharing">
+    <h2><span class="n">4</span>How information is shared</h2>
+    <p>We do not sell your personal information. Information is shared only with the service providers needed to
+      operate the Game, and only for the purposes above:</p>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th>What</th><th>Who</th><th>Why</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>App distribution &amp; device/technical data</td><td>Google Play &amp; Google Play services</td><td>Deliver the Game and updates</td></tr>
+          <tr><td>Purchase token / order ID</td><td>Google Play Billing</td><td>Process purchases &amp; deliver items</td></tr>
+          <tr><td>Aggregated usage &amp; crash data <span class="fill">if analytics on</span></td><td>[Analytics provider]</td><td>Diagnose issues &amp; improve the Game</td></tr>
+          <tr><td>Advertising identifier <span class="fill">if ads on</span></td><td>[Ad provider]</td><td>Show and measure ads</td></tr>
+        </tbody>
+      </table>
+      <caption>We may also disclose information if required by law, or to protect our rights and users' safety.</caption>
+    </div>
+    <p>Google's handling of data is governed by the
+      <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Privacy Policy</a>.</p>
+  </section>
+
+  <section id="purchases">
+    <h2><span class="n">5</span>In‑app purchases</h2>
+    <p>The Game offers optional in‑app purchases (for example, coin packs) through Google Play Billing. All payment
+      processing, billing, and refunds are handled by Google under its terms. We receive only confirmation that a
+      purchase succeeded so we can grant the item. To manage or request a refund for a purchase, use your Google
+      Play account.</p>
+  </section>
+
+  <section id="children">
+    <h2><span class="n">6</span>Children's privacy</h2>
+    <!-- Set ONE stance below to match your Play "Target audience" and content rating, and delete the other. -->
+    <p>The Game is intended for a general audience and is <strong>not directed to children under 13</strong>
+      (or the equivalent minimum age in your country). We do not knowingly collect personal information from
+      children. If you believe a child has provided us with personal information, contact us and we will delete it.</p>
+    <p style="color:var(--muted);font-size:.92rem">
+      <em>If your Game targets children, replace the paragraph above with a statement of compliance with the
+      Google Play Families policy and applicable children's‑privacy laws (COPPA/GDPR‑K), and ensure any
+      analytics or ads use child‑appropriate settings.</em></p>
+  </section>
+
+  <section id="retention">
+    <h2><span class="n">7</span>Data retention</h2>
+    <p>Game data stored on your device remains until you delete it (by clearing the Game's data or uninstalling).
+      Purchase records held by Google are retained by Google according to its policies and applicable law. Any
+      support emails are kept only as long as needed to help you and to keep records of the request.</p>
+  </section>
+
+  <section id="security">
+    <h2><span class="n">8</span>Security</h2>
+    <p>We take reasonable measures to protect information, and purchases run over Google's secure billing system.
+      No method of storage or transmission is 100% secure, so we cannot guarantee absolute security.</p>
+  </section>
+
+  <section id="rights">
+    <h2><span class="n">9</span>Your choices and rights</h2>
+    <ul>
+      <li><strong>Delete your game data:</strong> clear the Game's data in your device settings, or uninstall the Game.</li>
+      <li><strong>Purchases:</strong> view or request refunds through your Google Play account.</li>
+      <li><strong>Advertising ID</strong> <span class="fill">if ads on</span><strong>:</strong> reset or limit it in your device's Google settings.</li>
+      <li><strong>Access, correction, or deletion:</strong> depending on where you live (for example, under GDPR or CCPA),
+        you may have rights over your personal information. Contact us and we will respond as required by law.</li>
+    </ul>
+  </section>
+
+  <section id="permissions">
+    <h2><span class="n">10</span>Device permissions</h2>
+    <p>The Game requests only the permissions it needs to function, which may include:</p>
+    <ul>
+      <li><strong>Internet / network access</strong> — to download content and process in‑app purchases.</li>
+      <li><strong>Billing</strong> — to offer in‑app purchases through Google Play.</li>
+      <li><strong>Vibrate</strong> <span class="fill">if used</span> — for gameplay feedback.</li>
+    </ul>
+    <p>The Game does not request access to your location, contacts, microphone, or camera.</p>
+  </section>
+
+  <section id="transfers">
+    <h2><span class="n">11</span>International users</h2>
+    <p>The Game is available in multiple regions. Where information is processed by our service providers, it may be
+      transferred to and processed in countries other than yours. Those providers apply their own safeguards as
+      described in their privacy policies.</p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="n">12</span>Changes to this policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will change the "Last updated" date at the
+      top of this page and, where appropriate, provide notice in the Game or on this page. Your continued use of the
+      Game after changes take effect means you accept the updated policy.</p>
+  </section>
+
+  <div class="contact" id="contact">
+    <h2><span class="n">13</span>Contact us</h2>
+    <p>Questions about this policy or your data? We're happy to help.</p>
+    <p style="margin:.5rem 0 0">
+      <strong>Dungdungbot</strong><br>
+      Email: <a href="mailto:hanvfedex@gmail.com">hanvfedex@gmail.com</a><br>
+
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <p>Governing law: this policy is governed by the laws of <strong>Singapore</strong>, without regard to its conflict‑of‑laws rules.</p>
+  <p>© <span id="yr">2026</span> Dungdungbot. TungTung: Save the Buddha. All rights reserved.</p>
+</footer>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
